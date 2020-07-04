@@ -1,9 +1,9 @@
-## A Study Of Zombie Movements
+# A Study Of Zombie Movements
 
 This repo, demonstrates an approach on zombie movements in a grid, and infecting creatures they hunt.
 
-### Approaches
-####A
+## Approaches
+### A
 Having a DDD and OOP background, I thought of how to model this domain, as follows:
  - Organism as the base class. 
  - Zombie(bites) and Creature(can be infected, and transform into Zombie),
@@ -13,16 +13,16 @@ Having a DDD and OOP background, I thought of how to model this domain, as follo
  And some events to bubble up and keep containers aware of what is happening.
  
  However as the grid size grows bigger this approach gets slower and slower.
- ####B
+### B
  Another way I could think of , was to create the data structures, and anf play with lists and loops, to get the results.
  This would have been probably very fast, but not that readable. Given the challenge does not mention any performance preference. I decided to go for a third approach.
  
 
-####C (The Chosen):
+### C (The Chosen):
 
 Having a minimal set of objects, and work with lists, seems to get the best of both approaches, fast enough,
 and minimal memory foot print compared to approach one.
-### Application Input
+## Application Input
 The input to the application is a json file in the following format:
 ```json
 {
@@ -38,7 +38,7 @@ zombie_start: the location where the zombie wakes up.
 creatures: a list of creature locations within the grid.
 moves: the path a zombie will follow.
 
-### Install and run:
+## Install and run:
 
 Prerequisite is python 3.8. Just make sure it is in path env variable.
 
