@@ -1,0 +1,6 @@
+{
+  "size": 4,
+  "zombie_start": [2,1],
+  "creatures": [[0,1],[1,2],[3,1]],
+  "moves": "DLUURR"
+}
