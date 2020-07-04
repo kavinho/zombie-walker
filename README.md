@@ -1,9 +1,11 @@
 # A Study Of Zombie Movements
 
-This repo, demonstrates an approach on zombie movements in a grid, and infecting creatures they hunt.
+This repo, demonstrates an solution on zombie movements effects in a grid, and infecting creatures they bite.
 
-## Approaches
+## Considered Approaches
+
 ### A
+
 Having a DDD and OOP background, I thought of how to model this domain, as follows:
  - Organism as the base class. 
  - Zombie(bites) and Creature(can be infected, and transform into Zombie),
@@ -13,15 +15,19 @@ Having a DDD and OOP background, I thought of how to model this domain, as follo
  And some events to bubble up and keep containers aware of what is happening.
  
  However as the grid size grows bigger this approach gets slower and slower.
+
 ### B
- Another way I could think of , was to create the data structures, and anf play with lists and loops, to get the results.
- This would have been probably very fast, but not that readable. Given the challenge does not mention any performance preference. I decided to go for a third approach.
+
+Another way I could think of, was to create the data structures, and play with lists and loops and mutiple functions to get the results.
+While it works, it is not that readable. so decided to try a third  approach.
  
 
 ### C (The Chosen):
 
-Having a minimal set of objects, and work with lists, seems to get the best of both approaches, fast enough,
-and minimal memory foot print compared to approach one.
+This is based on having a minimal set of models, and working with lists, seems to get the best of both approaches, fast enough,
+and minimal memory foot-print. 
+Within this approach there is a Zombie model, that can move and inspect if it has the same location as creatures.
+
 ## Application Input
 The input to the application is a json file in the following format:
 ```json
@@ -40,10 +46,11 @@ moves: the path a zombie will follow.
 
 ## Install and run:
 
-Prerequisite is python 3.8. Just make sure it is in path env variable.
+The only Prerequisite is python 3.8. Just make sure it is in path env variable.
 
 The following command installs python3 virtual env, then runs the application within that env.
 It assumes a file called boo.json has the input data in json format, and is in the same location as the start.sh file.
+Thia has been developed on OSX.
 
 ```
 ./start.sh
@@ -52,7 +59,7 @@ It assumes a file called boo.json has the input data in json format, and is in t
 If you prefer to run the application directly here is the syntax:
 
 ```
-python zombie_runner.py -f <file_name.json>
+(env) ~/zz-dev > python zombie_runner.py -f <file_name.json>
 ```
 If the file_name.json is skipped, the app will look for 'input.json'.
 
