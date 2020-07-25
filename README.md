@@ -1,10 +1,11 @@
 # A Study Of Zombie Movements
 
-This repo, demonstrates an solution on zombie movements effects in a grid, and infecting creatures they bite.
+This repo, demonstrates an solution on zombie movement effects in a grid, and infecting other living creatures( :sheep: )they bite.
 
 ### A bit of a background
 
-In a  NxN matrix world. A zombie wakes up in a predefined location(x,y). Point 0 is top left.
+In a  NxN matrix world. A zombie wakes up in a predefined location(x,y). Point 0,0 being top left.
+
 This zomibe follows a predefined set of movements: "U" up, "D" down, "L" left, "R" right, to travel in the matrix world square of square.
 If it sees a creature in that squre it will infect them, and move on. In turn each turned creature, which is a zombie now, starts the same series of moves,
 to infect others.
@@ -75,6 +76,9 @@ If you prefer to run the application directly here is the syntax:
 ```
 If the file_name.json is skipped, the app will look for 'input.json'.
 
+ ## Notes
+ * Alternative requirements could be considered : a giant zombie, which occupies more than just one square, and infects other creatures, keeping it's edge traveling properties.
+ * Another alternative would be to move the zombie one square at a time.
  
 
 
