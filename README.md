@@ -6,13 +6,13 @@ This repo, demonstrates an solution on zombie movement effects in a grid, and in
 
 In a  NxN matrix world. A zombie wakes up in a predefined location(x,y). Point 0,0 being top left.
 
-This zomibe follows a predefined set of movements: "U" up, "D" down, "L" left, "R" right, to travel in the matrix world square of square.
-If it sees a creature in that squre it will infect them, and move on. In turn each turned creature, which is a zombie now, starts the same series of moves,
+This zomibe follows a predefined set of movements:"U" up, "D" down, "L" left, "R" right,ie:"URLLDD", to travel in the matrix world square by square.
+If it encounters a creature in that sqaure it will infect them, and move on. In newly infected creature, which is a zombie now, starts the same series of moves,
 to infect others.
 
-Note Zombies can travel from one edge to another, for example "R" on far right edge, will put them the x:0 of the same row.
-The World will come to and end when there is no more newly infected zombies.
-Right well designed, well tested, readable, performant code.
+Note zombies can travel from one edge to another, for example "R" on far right edge, will put them the far left(x:0), of the same row.
+The walk will come to and end when there is no more newly infected zombies.
+A well designed, well tested, readable, performant code.
 
 
 ## Considered Approaches
