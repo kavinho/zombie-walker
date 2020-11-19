@@ -1,6 +1,6 @@
 # A Study Of Zombie Movements
 
-This repo, demonstrates an solution on zombie movement effects in a grid, and infecting other living creatures( :sheep: )they bite.
+This repo, inpspects movement of zombies,and their effects in a grid, they infect other living creatures( :sheep: ) the encounter in each cell of the gridthey bite.
 
 ### A bit of a background
 
