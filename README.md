@@ -1,19 +1,18 @@
 # A Study Of Zombie Movements
 
-This repo, inpspects movement of zombies,and their effects in a grid, they infect other living creatures( :sheep: ) the encounter in each cell of the gridthey bite.
+This repo, inspects movement of zombies,and their effects in a grid, they infect(bite) other living creatures( :sheep: ) they encounter in each cell of the grid.
 
 ### A bit of a background
 
-In a  NxN matrix world. A zombie wakes up in a predefined location(x,y). Point 0,0 being top left.
+In a  NxN matrix world. A zombie(patient zero) wakes up in a predefined location(x,y). Point 0,0 being top left.
 
 This zomibe follows a predefined set of movements:"U" up, "D" down, "L" left, "R" right,ie:"URLLDD", to travel in the matrix world square by square.
-If it encounters a creature in that sqaure it will infect them, and move on. In newly infected creature, which is a zombie now, starts the same series of moves,
+If it encounters a creature in that sqaure it will infect them, and move on. The newly infected creature, which is a zombie now, starts the same series of moves,
 to infect others.
 
 Note zombies can travel from one edge to another, for example "R" on far right edge, will put them the far left(x:0), of the same row.
 The walk will come to and end when there is no more newly infected zombies.
-A well designed, well tested, readable, performant code.
-
+The ai is a well designed, well tested, readable, performant code.
 
 ## Considered Approaches
 
